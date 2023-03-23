@@ -1,0 +1,59 @@
+{
+	"id": "5001a0fb-b006-4258-92f7-64d7586ee64d",
+	"name": "Read Users",
+	"timestamp": "2023-03-21T13:27:58.020Z",
+	"collection_id": "26355095-c1341fd4-9224-4d5d-800a-71a9b7b86e28",
+	"folder_id": 0,
+	"environment_id": "26355095-16e78f23-78e0-492a-8abf-8e510f828c3f",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-21T13:27:56.939Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "66026f62-8db1-49da-92d7-e008bada160d",
+			"name": "New Request",
+			"url": "https://jsonplaceholder.typicode.com/users",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains String": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains String": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains String": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 45,
+	"collection": {
+		"requests": [
+			{
+				"id": "66026f62-8db1-49da-92d7-e008bada160d",
+				"method": "GET"
+			}
+		]
+	}
+}

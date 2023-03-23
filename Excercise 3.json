@@ -1,0 +1,90 @@
+{
+	"id": "916573c0-f4ee-49bc-b974-ae6bb93f603c",
+	"name": "Spotify",
+	"timestamp": "2023-03-21T14:21:44.145Z",
+	"collection_id": "26355095-9618d802-3d4e-4721-a564-a544e95019fa",
+	"folder_id": 0,
+	"environment_id": "26355095-16e78f23-78e0-492a-8abf-8e510f828c3f",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-21T14:21:42.187Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a32fd245-5199-4442-8959-46854113f546",
+			"name": "Create PayList",
+			"url": "https://api.spotify.com/v1/users//playlists",
+			"time": 326,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Read the response id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Read the response id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Read the response id": true
+				}
+			]
+		},
+		{
+			"id": "aa951537-4987-4253-8251-9a6b7513c882",
+			"name": "Adding playlist",
+			"url": "https://api.spotify.com/v1/playlists/14j2dNvMmWyWc3gq04x5kK/tracks?uris=spotify:track:4iV5W9uYEdYUVa79Axb7Rh,spotify:track:1301WleyT98MSxVHPZCA6M",
+			"time": 181,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 507,
+	"collection": {
+		"requests": [
+			{
+				"id": "a32fd245-5199-4442-8959-46854113f546",
+				"method": "POST"
+			},
+			{
+				"id": "aa951537-4987-4253-8251-9a6b7513c882",
+				"method": "POST"
+			}
+		]
+	}
+}

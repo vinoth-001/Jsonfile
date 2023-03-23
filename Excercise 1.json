@@ -1,0 +1,90 @@
+{
+	"id": "85d3fada-a3c6-48fc-b702-fea41c7b6fa2",
+	"name": "ChainRequest",
+	"timestamp": "2023-03-21T13:21:53.340Z",
+	"collection_id": "26355095-43707fe3-ac02-47b8-8b9e-b1047447e15f",
+	"folder_id": 0,
+	"environment_id": "26355095-16e78f23-78e0-492a-8abf-8e510f828c3f",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-21T13:21:51.862Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3f3eecee-a895-422b-9362-066be5de004f",
+			"name": "Create user",
+			"url": "https://reqres.in/api/users/",
+			"time": 419,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Read the response id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Read the response id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				419
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Read the response id": true
+				}
+			]
+		},
+		{
+			"id": "c9e80322-3c22-4ac8-a29f-708161475b25",
+			"name": "Update user",
+			"url": "https://reqres.in/api/users/235",
+			"time": 491,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 for Update User": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 for Update User": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				491
+			],
+			"allTests": [
+				{
+					"Status code is 200 for Update User": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 910,
+	"collection": {
+		"requests": [
+			{
+				"id": "3f3eecee-a895-422b-9362-066be5de004f",
+				"method": "POST"
+			},
+			{
+				"id": "c9e80322-3c22-4ac8-a29f-708161475b25",
+				"method": "PUT"
+			}
+		]
+	}
+}
